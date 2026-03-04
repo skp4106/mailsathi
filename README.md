@@ -6,12 +6,12 @@ MailSathi is a Chrome extension that enhances the Gmail experience using AI. It 
 
 ## Features
 
-• **AI Email Summaries** – Generates short summaries of emails to quickly understand the main message.
-• **AI Reply Generation** – Converts simple user instructions into professional email replies.
-• **Multi-Email Processing** – Summarizes multiple selected emails at once.
-• **Export Summaries** – Download summaries of selected emails as a text file.
-• **Smart Caching System** – Prevents repeated API calls by storing generated summaries.
-• **Floating Gmail Sidebar** – Displays summaries and reply suggestions directly inside Gmail.
+**AI Email Summaries** – Generates short summaries of emails to quickly understand the main message.
+**AI Reply Generation** – Converts simple user instructions into professional email replies.
+**Multi-Email Processing** – Summarizes multiple selected emails at once.
+**Export Summaries** – Download summaries of selected emails as a text file.
+**Smart Caching System** – Prevents repeated API calls by storing generated summaries.
+**Floating Gmail Sidebar** – Displays summaries and reply suggestions directly inside Gmail.
 
 ---
 
