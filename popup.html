@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MailMind - Daily Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">📬</span>
+                <h1>MailMind</h1>
+            </div>
+            <div class="settings-btn" id="settingsBtn">⚙️</div>
+        </header>
+
+        <div class="api-setup" id="apiSetup" style="display: none;">
+            <h3>Setup Gemini API</h3>
+            <div class="input-group">
+                <input type="password" id="apiKey" placeholder="Enter your Gemini API key">
+                <button id="saveApiKey">Save</button>
+            </div>
+            <div id="apiError" style="display: none;"></div>
+            <p class="help-text">
+                Get your API key from <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a>
+            </p>
+        </div>
+
+        <div class="main-content" id="mainContent">
+            <div class="stats-section">
+                <div class="stat-card single">
+                    <span class="stat-number" id="emailCount">-</span>
+                    <span class="stat-label">Emails Today</span>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-card">
+                    <div class="info-icon">✨</div>
+                    <h3>AI Assistant Active</h3>
+                    <p>Open any email to see AI-powered summaries and reply suggestions</p>
+                </div>
+            </div>
+
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Counting today's emails...</p>
+            </div>
+
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="empty-icon">📭</div>
+                <h3>No emails today</h3>
+                <p>You haven't received any new emails today yet.</p>
+            </div>
+
+            <div class="error-state" id="errorState" style="display: none;">
+                <div class="error-icon">⚠️</div>
+                <h3>Unable to load emails</h3>
+                <p id="errorMessage">Please make sure you're on Gmail and try again.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
